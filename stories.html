@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鸡场 - 故事</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-left,
+        .nav-right {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-left li,
+        .nav-right li {
+            margin: 0 15px;
+        }
+
+        .nav-left a,
+        .nav-right a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-left a:hover,
+        .nav-right a:hover {
+            color: #ffeb3b;
+            transform: scale(1.1);
+        }
+
+        .logo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 200px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: rotate(5deg) scale(1.05);
+        }
+
+        main {
+            padding: 120px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .intro-story {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .intro-story h2 {
+            color: #ffeb3b;
+            margin-bottom: 15px;
+        }
+
+        .farmers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .farmer-card {
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.8), rgba(160, 82, 45, 0.8));
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .farmer-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .farmer-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid #ffeb3b;
+        }
+
+        .farmer-card h3 {
+            margin: 10px 0;
+            color: #ffeb3b;
+        }
+
+        .farmer-card p {
+            font-size: 0.9em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="stories.html">故事</a></li>
+            </ul>
+            <div class="logo">
+                <img src="https://via.placeholder.com/200x100/8b4513/ffffff?text=鸡场标志" alt="鸡场标志">
+            </div>
+            <ul class="nav-right">
+                <li><a href="products.html">产品</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>我们的养鸡农民故事</h1>
+        <div class="intro-story">
+            <h2>農場的故事概述</h2>
+            <p>從一個小家庭農場開始，我們的雞場致力於養育快樂的雞，提供有機產品。多年來，我們的農民透過創新和熱愛，創造了無數溫馨的故事。探索以下12位農民的獨特經歷，每位都有自己的傳奇！</p>
+        </div>
+        <div class="farmers-grid">
+            <div class="farmer-card" onclick="window.location.href='farmer1.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=李明" alt="李明">
+                <h3>李明 - 北京农民</h3>
+                <p>有机鸡蛋专家，热爱传统养殖。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer2.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=王华" alt="王华">
+                <h3>王华 - 上海农民</h3>
+                <p>城市农场先锋，创新可持续方法。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer3.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=张伟" alt="张伟">
+                <h3>张伟 - 广东农民</h3>
+                <p>热带气候下的鸡药大师。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer4.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=刘芳" alt="刘芳">
+                <h3>刘芳 - 四川农民</h3>
+                <p>山区养殖专家，注重生态平衡。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer5.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=陈强" alt="陈强">
+                <h3>陈强 - 山东农民</h3>
+                <p>大型农场经营者，产量冠军。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer6.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=杨丽" alt="杨丽">
+                <h3>杨丽 - 河南农民</h3>
+                <p>女性养殖先锋，社区领导者。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer7.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=赵刚" alt="赵刚">
+                <h3>赵刚 - 湖南农民</h3>
+                <p>辣椒鸡药配方发明者。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer8.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=孙梅" alt="孙梅">
+                <h3>孙梅 - 浙江农民</h3>
+                <p>有机认证专家，绿色生活倡导者。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer9.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=周杰" alt="周杰">
+                <h3>周杰 - 江苏农民</h3>
+                <p>水稻与鸡养殖结合大师。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer10.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=吴婷" alt="吴婷">
+                <h3>吴婷 - 湖北农民</h3>
+                <p>洪水后重建专家，坚韧不拔。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer11.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=郑凯" alt="郑凯">
+                <h3>郑凯 - 云南农民</h3>
+                <p>高原有机养殖先锋。</p>
+            </div>
+            <div class="farmer-card" onclick="window.location.href='farmer12.html'">
+                <img src="https://via.placeholder.com/100x100/8b4513/ffffff?text=林娜" alt="林娜">
+                <h3>林娜 - 福建农民</h3>
+                <p>海边农场创新者，海洋与鸡的融合。</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
